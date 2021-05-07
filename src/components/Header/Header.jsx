@@ -1,8 +1,10 @@
 const Header = () => {
 
     return(
-        <h1>Feedback!</h1>
-        <h2>Don't forget it!!!</h2>
+        <div>
+            <h1>Feedback!</h1>
+                <h2>Don't forget it!!!</h2>
+        </div>
     )
 }
 export default Header;
