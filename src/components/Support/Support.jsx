@@ -13,10 +13,10 @@ const Support = () => {
     function handleSubmit(event){
         event.preventDefault();
         history.push('/Comments');
-        console.log('inside handleSubmit in feeling');
+        console.log('inside handleSubmit in support');
         dispatch({
             type: 'SUPPORT',
-            payload: {support: 'numberRank'}
+            payload: numberRank
         });
     }
     return(

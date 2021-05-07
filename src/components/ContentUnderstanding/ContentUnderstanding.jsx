@@ -16,7 +16,7 @@ const ContentUnderstanding = () => {
         console.log('inside handleSubmit in contentUnderstanding');
         dispatch({
             type: 'CONTENT_UNDERSTANDING',
-            payload: {understanding: 'numberRank'}
+            payload: numberRank
         });
     }
     return(

@@ -13,10 +13,10 @@ const Comments = () => {
     function handleSubmit(event){
         event.preventDefault();
         history.push('/Review');
-        console.log('inside handleSubmit in feeling');
+        console.log('inside handleSubmit in comments');
         dispatch({
             type: 'COMMENTS',
-            payload: {comments: 'comments'}
+            payload: comments
         });
     }
     return(
@@ -29,7 +29,6 @@ const Comments = () => {
         <div>
             <br />
             <input
-                required
                 placeholder=''
                 value={comments}
                 onChange = {(event) => setComments(event.target.value) }

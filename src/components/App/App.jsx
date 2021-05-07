@@ -8,6 +8,7 @@ import Header from '../Header/Header';
 import ContentUnderstanding from '../ContentUnderstanding/ContentUnderstanding';
 import Support from '../Support/Support';
 import Comments from '../Comments/Comments';
+import ReviewFeedback from '../ReviewFeedback/ReviewFeedback';
 
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
             <Route exact path="/ContentUnderstanding" component={ContentUnderstanding} />
             <Route exact path="/Support" component={Support} />
             <Route exact path="/Comments" component={Comments} />
-
+            <Route exact path="/Review" component={ReviewFeedback} />
         </Router>
       </header>
     </div>
