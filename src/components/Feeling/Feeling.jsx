@@ -16,7 +16,7 @@ const Feeling = () => {
         console.log('inside handleSubmit in feeling');
         dispatch({
             type: 'FEELING',
-            payload: {Feeling: 'numberRank'}
+            payload: {feeling: 'numberRank'}
         });
     }
     return(

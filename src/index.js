@@ -10,13 +10,13 @@ import registerServiceWorker from './registerServiceWorker';
 
 const feedbackReducer = (state = { }, action) => {
         if(action.type === 'FEELING'){
-        state = {...state, Feeling: action.payload}
+        state = {...state, feeling: action.payload}
     }   if(action.type === 'CONTENT_UNDERSTANDING'){
-        state = {...state, ContentUnderstanding: action.payload }
+        state = {...state, understanding: action.payload }
     }   if(action.type === 'SUPPORT'){
-        state = {...state, Support: action.payload}
+        state = {...state, support: action.payload}
     }   if(action.type === 'COMMENTS'){
-        state = {...state, Comments: action.payload}
+        state = {...state, comments: action.payload}
     }   if(action.type === 'CLEAR_FEEDBACK_RESULTS'){
         state = { }
     }

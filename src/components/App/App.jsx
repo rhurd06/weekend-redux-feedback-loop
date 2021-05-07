@@ -6,6 +6,8 @@ import './App.css';
 import Feeling from '../Feeling/Feeling';
 import Header from '../Header/Header';
 import ContentUnderstanding from '../ContentUnderstanding/ContentUnderstanding';
+import Support from '../Support/Support';
+import Comments from '../Comments/Comments';
 
 
 function App() {
@@ -19,7 +21,9 @@ function App() {
         <Router>
             <Route exact path="/" component={Feeling} />
             <Route exact path="/ContentUnderstanding" component={ContentUnderstanding} />
-            
+            <Route exact path="/Support" component={Support} />
+            <Route exact path="/Comments" component={Comments} />
+
         </Router>
       </header>
     </div>
