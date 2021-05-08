@@ -6,6 +6,7 @@ const ThankYou = () => {
 
     const history = useHistory();
 
+    //clickHandler to make the button work and send to next page
     const handleSubmit = (event) => {
         event.preventDefault();
         history.push('/');

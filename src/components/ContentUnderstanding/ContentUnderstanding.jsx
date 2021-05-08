@@ -12,6 +12,7 @@ const ContentUnderstanding = () => {
     const history = useHistory();
     const dispatch = useDispatch();
 
+    //clickHandler to make the button work and send to next page
     function handleSubmit(event){
         event.preventDefault();
         history.push('/Support');

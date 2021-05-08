@@ -20,6 +20,7 @@ const feedbackReducer = (state = { }, action) => {
     }   return state;
 };
 
+//Giant object tha holds all of the info for our application
 const store=createStore(
     combineReducers({
         feedbackReducer,
@@ -28,6 +29,9 @@ const store=createStore(
         logger
     )
 );
+
+//We wrap the App inside the Provider to make Redux available throughout
+//the entire application
 ReactDOM.render(
     <Provider store={store}>
         <App />
