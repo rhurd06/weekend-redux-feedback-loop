@@ -26,14 +26,15 @@ const Comments = () => {
             <h3>Any Comments</h3>
         </div>
         <br />
-        <div>
+        <div className="inputFields">
             <br />
             <input
+                className="inputs"
                 placeholder=''
                 value={comments}
                 onChange = {(event) => setComments(event.target.value) }
             />
-            <button onClick={handleSubmit}>Next</button>
+            <button className="buttonField" onClick={handleSubmit}>Next</button>
         </div>
         </>
     )

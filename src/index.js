@@ -17,10 +17,7 @@ const feedbackReducer = (state = { }, action) => {
         state = {...state, support: action.payload}
     }   if(action.type === 'COMMENTS'){
         state = {...state, comments: action.payload}
-    }   if(action.type === 'CLEAR_FEEDBACK_RESULTS'){
-        state = { }
-    }
-    return state;
+    }   return state;
 };
 
 const store=createStore(

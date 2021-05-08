@@ -26,15 +26,16 @@ const Support = () => {
             <h3>How well do you feel supported today?</h3>
         </div>
         <br />
-        <div>
+        <div className="inputFields">
             <br />
             <input
+                className="inputs"
                 required
                 placeholder='Rate 1-5'
                 value={numberRank}
                 onChange = {(event) => setNumberRank(event.target.value)}
             />
-            <button onClick={handleSubmit}>Next</button>
+            <button className="buttonField" onClick={handleSubmit}>Next</button>
         </div>
         </>
     )

@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import { useHistory } from 'react-router';
 import {useDispatch} from 'react-redux';
 
+import './Feeling.css';
+
 const Feeling = () => {
 
     const [numberRank, setNumberRank] = useState('');
@@ -25,16 +27,15 @@ const Feeling = () => {
             <Header />
             <h3>How are you feeling today?</h3>
         </div>
-        <br />
-        <div>
-            <br />
+        <div className="inputFields">
             <input
                 required
+                className="inputs"
                 placeholder='Rate 1-5'
                 value={numberRank}
                 onChange = {(event) => setNumberRank(event.target.value)}
             />
-            <button onClick={handleSubmit}>Next</button>
+            <button className="buttonField" onClick={handleSubmit}>Next</button>
         </div>
         </>
     )
