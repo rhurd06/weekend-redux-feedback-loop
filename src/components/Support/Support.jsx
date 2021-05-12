@@ -12,6 +12,9 @@ const Support = () => {
     
     //clickHandler to make the button work and send to next page
     function handleSubmit(event){
+        if(numberRank > 5 || numberRank < 5 || numberRank === '') {
+            alert(`This field cannot be left blank, please enter a number.`);
+        }
         event.preventDefault();
         history.push('/Comments');
         console.log('inside handleSubmit in support');
