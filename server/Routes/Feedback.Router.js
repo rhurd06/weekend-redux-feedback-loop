@@ -25,9 +25,4 @@ router.post('/', (req, res) => {
         });
 });
 
-router.get('/', (req, res) => {
-    console.log('woot');
-    res.sendStatus(201);
-})
-
 module.exports = router;
