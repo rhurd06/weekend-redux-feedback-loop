@@ -1,10 +1,15 @@
-# Project Name
-
-Class feedback 
+# Prime Class feedback
 
 ## Description
 
-Our client wanted a site where users could give feedback on their class experience each day. They wanted a nummerical ranking system (1-5, 1 being poor and 5 being great) for fields including content understangin, support, and feeling. They also requested a place for comments so users could give additional feedback or suggestions. After each field, all of which were required except comments, was complete they gave a chance to review feedback before submitting. Once the user clicked submit the site returns to the initial page.
+Duration: 12 hours
+
+Our client wanted a site where users could give feedback on their class experience each day. They wanted a nummerical ranking system (1-5, 1 being poor and 5 being great) for fields including content understanding, support, and feeling.
+
+Here's a view of what one of those pages could look like:
+![Feedback]('./wireframes/Feedback-feeling-wireframe.png)
+
+They also requested a place for comments so users could give additional feedback or suggestions. After each field, all of which were required except comments, was complete they gave a chance to review feedback before submitting. Once the user clicked submit the site returns to the initial page.
 
 To create an API such as this one you would need:
 React
