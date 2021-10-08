@@ -14,16 +14,15 @@ const ContentUnderstanding = () => {
 
     //clickHandler to make the button work and send to next page
     function handleSubmit(event){
-        if(numberRank > 5 || numberRank < 5 || numberRank === '') {
-            alert(`This field cannot be left blank, please enter a number.`);
+        if(numberRank >=1 && numberRank<= 5) {
+            dispatch({ 
+                type: 'CONTENT_UNDERSTANDING', 
+                payload: numberRank
+            })
+            history.push('/Support');
+        } else{
+            alert('This field cannot be left blank, please enter a number.');
         }
-        event.preventDefault();
-        history.push('/Support');
-        console.log('inside handleSubmit in contentUnderstanding');
-        dispatch({
-            type: 'CONTENT_UNDERSTANDING',
-            payload: numberRank
-        });
     }
     return(
         <>
